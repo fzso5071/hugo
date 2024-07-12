@@ -23,7 +23,7 @@ jobs:
           extended: true
 
       - name: New
-        run: hugo new site
+        run: hugo new site new- hugo - website
         
           
       - name: Build
