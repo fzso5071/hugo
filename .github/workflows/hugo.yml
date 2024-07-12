@@ -60,7 +60,8 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           path: ./public
-
+- name: Create new Hugo site
+  run: hugo new site .
   # Deployment job
   deploy:
     environment:
