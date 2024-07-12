@@ -27,6 +27,9 @@ jobs:
 
       - name: CD
         run: cd blog
+
+      - name: New Page
+        run: hugo new about.md
         
       # Hugo构建静态站点，默认输出到public目录下    
       - name: Build
