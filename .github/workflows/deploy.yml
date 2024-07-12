@@ -23,7 +23,7 @@ jobs:
           extended: true
 
       - name: Create New Site
-        run: hugo new site ./your-new-site
+        run: hugo new site blog
         working-directory: ./path-to-your-directory
         
       # Hugo构建静态站点，默认输出到public目录下    
