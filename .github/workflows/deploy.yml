@@ -25,7 +25,10 @@ jobs:
       - name: New
         run: hugo new site new- hugo - website
         
-
+      # Hugo构建静态站点，默认输出到public目录下    
+      - name: Build
+        run: hugo --gc --verbose --minify
+        
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         if: ${{ github.ref == 'refs/heads/main' }}
