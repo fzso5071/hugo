@@ -22,8 +22,9 @@ jobs:
           # 是否启用 hugo extend
           extended: true
 
-      - name: New
-        run: hugo new site new- hugo - website
+        - name: Create New Site
+        run: hugo new site ./your-new-site
+        working-directory: ./path-to-your-directory
         
       # Hugo构建静态站点，默认输出到public目录下    
       - name: Build
